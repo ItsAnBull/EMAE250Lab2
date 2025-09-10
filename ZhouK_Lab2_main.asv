@@ -7,4 +7,4 @@ array = [1 7 2 1
 
 expected = det(array)
 
-calculated = ZhouK_Lab2(array)
+ZhouK_Lab2(array)

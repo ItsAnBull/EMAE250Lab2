@@ -1,8 +1,7 @@
-function output = ZhouK_Lab2(m)
+function big = ZhouK_Lab2(A)
 
 big = 0;
 
-% ---------------------
 for i = 1:4
 
     term = A(1,i);
@@ -18,9 +17,10 @@ for i = 1:4
         N(1,:) = [];
         N(:,j) = [];
         det = (N(1,1)*N(2,2) - N(1,2)*N(2,1));
-        small = small + term2*det;
+        small = small + ((-1)^(j+1))*term2*det;
 
     end
 
-    big = big + term*small;
+    big = big + ((-1)^(i+1))*term*small;
+
 end
