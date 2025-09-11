@@ -12,14 +12,16 @@ for i = 1:4
     % initialize a copy of the 4x4 matrix
     M = A;
 
-    % create a 3x3 matrix by blocking out row 1 and the column corresponding to the index of term
+    % create a 3x3 matrix by blocking out row 1 and the column
+    % corresponding to the index of term
     M(1,:) = [];
     M(:,i) = [];
     
     % reset the small variable
     small = 0;
     
-    % this for loop will parse through the 3 columns of the created 3x3 matrices
+    % this for loop will parse through the 3 columns of the created 3x3
+    % matrices
     for j = 1:3
         
         % store the value to be multiplied ot the 2x2 matrix term
@@ -28,7 +30,8 @@ for i = 1:4
         % initialize a copy of the 3x3 matrix
         N = M;
 
-        % create a 2x2 matrix by blocking out row 1 and the column corresponding to the index of term2
+        % create a 2x2 matrix by blocking out row 1 and the column
+        % corresponding to the index of term2
         N(1,:) = [];
         N(:,j) = [];
 
