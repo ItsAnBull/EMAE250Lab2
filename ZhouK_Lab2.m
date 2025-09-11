@@ -19,7 +19,7 @@ for i = 1:4
     % reset the small variable
     small = 0;
     
-    % this column will parse through the terms of the created 3x3 matrices
+    % this for loop will parse through the 3 columns of the created 3x3 matrices
     for j = 1:3
         
         % store the value to be multiplied ot the 2x2 matrix term
